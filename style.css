@@ -1,0 +1,157 @@
+/* Font Integration */
+@font-face {
+    font-family: 'EBGaramond'; /* All Others */
+    src: url('Fonts/EBGaramond-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Lobster'; /* Title */
+    src: url('Fonts/Lobster-Regular.ttf');
+}
+@font-face {
+    font-family: 'Silkscreen'; /* Header Text (Video Game Style) */
+    src: url('Fonts/Silkscreen-Regular.ttf');
+}
+@font-face {
+    font-family: 'DancingScript'; /* Backquote & Cite */
+    src: url('Fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+/***********************
+******** Global ********
+***********************/
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0;
+    font-family: 'EBGaramond';
+}
+h1 {
+    font-size: 3.5em;
+    font-family: 'Lobster';
+}
+h2 {
+    font-size: 2.5em;
+    font-family: 'Lobster';
+    text-align: center;
+}
+h3 {
+    font-size: 2em;
+    font-family: 'Silkscreen';
+    text-decoration: underline;
+}
+section {
+    padding: 1em;
+    border-top: 2px dashed rgb(172, 163, 159);
+}
+ul {
+    padding: 0;
+    font-size: 1.2em;
+}
+p {
+    font-size: 1.2em;
+}
+
+/* Global Class */
+.main_container {
+    width: 85%;
+    background-color: #ececec;
+}
+.d-flex {
+    display: flex;
+}
+.f-column {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/**********************
+******** Aside ********
+**********************/
+aside {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100dvh;
+    padding: 1em;
+    background-image: linear-gradient(#FCBC27, #FF851A, #FF6725);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Nav Bar */
+nav a {
+    margin: 0.5em 0;
+    padding: 0.4em 0.6em;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    transition: 0.5s all;
+}
+nav a:hover, nav a:focus {
+    background-color: #b4b4b4d2;
+}
+
+/***********************
+******** Header ********
+***********************/
+header {
+    width: 100%;
+    height: 100dvh;
+    padding: 1em;
+    font-family: 'Silkscreen';
+}
+
+/*********************
+******** Main ********
+*********************/
+
+/* Section | About */
+#about {
+    background-color: #c9c9c9;
+}
+.about_info_container {
+    justify-content: space-around;
+}
+.about_info_box {
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    padding: 0.5em;
+    background-color: #ffe761;
+    border-radius: 15px;
+}
+
+/* Section | Project */
+.project_container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.project_box {
+    width: 30%;
+    padding: 0.5em;
+    text-align: center;
+    background-color: #FCBC27;
+    border-radius: 15px;
+}
+.project_box_img {
+    width: 100%;
+    filter: blur(2px);
+    transition: 0.5s;
+}
+.project_box_img:hover {
+    transform: scale(1.01);
+    filter: blur(0);
+}
+.project_box_img img {
+    width: 100%;
+    border-radius: 10px;
+}
