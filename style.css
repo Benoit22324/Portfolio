@@ -92,8 +92,6 @@ aside {
     height: 100dvh;
     padding: 1em;
     background-image: linear-gradient(#FCBC27, #FF851A, #FF6725);
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
 }
 
 /* Nav Bar */
