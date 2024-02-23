@@ -119,6 +119,20 @@ header {
     padding: 1em;
     font-family: 'Silkscreen';
 }
+.animation::after {
+    animation: animate 1.5s infinite;
+}
+#HeaderTxt::after {
+    display: inline-block;
+    content: '|';
+}
+
+@keyframes animate {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    51% {opacity: 100;}
+    100% {opacity: 100;}
+}
 
 /*********************
 ******** Main ********
