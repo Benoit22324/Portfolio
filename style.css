@@ -179,6 +179,23 @@ header {
     transform: scale(1.01);
     filter: blur(0);
 }
+.project_link_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.project_link {
+    padding: 0.5em;
+    width: 45%;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(177, 177, 177);
+    border-radius: 10px;
+}
+.project_link:hover {
+    background-color: rgb(201, 201, 201);
+    box-shadow: 2px 2px 5px rgba(104, 104, 104, 0.8);
+}
 
 /* Section | Contact */
 .contact_form {
